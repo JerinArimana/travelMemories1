@@ -1,0 +1,37 @@
+.main-container.home-page{
+    padding:2.5rem;
+    min-height:100vh;
+    @media($upto-small){
+      padding:2.5rem 0.938rem;
+    }
+    .travel-tab-switch{
+      margin-bottom:1.5rem;
+      @media($mobile-sm){
+        width:100%;
+      }
+    }
+    .travel-home--grid{
+      .row{
+        row-gap:1.5rem;
+        @media($mobile){
+          margin-left:-0.313rem;
+          margin-right:-0.313rem;
+          row-gap:0.625rem;
+        }
+      }
+      .col-6{
+        @media($mobile){
+          padding-left:0.313rem;
+          padding-right:0.313rem;
+        }
+      }
+    }
+    .create-btn{
+      display:inline-block;
+      padding:1rem 1.625rem;
+      @media($mobile-sm){
+        padding: 0.875rem;
+      }
+   }
+  }
+ 

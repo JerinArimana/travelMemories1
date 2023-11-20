@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: $primary-font;
+  line-height: 1.5rem;
+  @media ($upto-small) {
+    font-size: 14px;
+  }
+}
+.grey-bg {
+  background: #f9fafb;
+}
+.grey-bg-2 {
+  background: #f4f5f7;
+  &.main-container {
+    padding: 2.5rem;
+    min-height: 100vh;
+    @media ($upto-small) {
+      padding: 2.5rem 0.938rem;
+    }
+  }
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+.no-line {
+  text-decoration: none;
+}
+.section-wrapper {
+  max-width: 77.5rem;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  padding: 6.5rem;
+  @media ($upto-medium) {
+    padding: 1.5rem;
+  }
+  @media ($large) {
+    padding: 3rem;
+    gap: 40px;
+  }
+}
+.section + section {
+  margin-top: 10rem;
+  @media ($upto-medium) {
+    margin-top: 3rem;
+  }
+  @media ($large) {
+    margin-top: 4rem;
+  }
+}
+.container {
+  @media ($xl) {
+    max-width: 1170px;
+  }
+  @media ($xxl) {
+    max-width: 1350px;
+  }
+  @media ($xxxl) {
+    max-width: 1400px;
+  }
+  @media ($desktop-xxxl) {
+    max-width: 1710px;
+  }
+}

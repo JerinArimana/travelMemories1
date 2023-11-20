@@ -1,0 +1,24 @@
+.travel-service {
+  &--centered-image {
+    width: 638px;
+    height: 638px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+  &--centered-image-content {
+    @include position(absolute, 8rem, auto, auto, 9rem, 2);
+    h1 {
+      @include fontSpecs(2.813rem, bold, $white, normal, initial);
+      span {
+        @include fontSpecs(2.438rem, 300, $white, normal, initial);
+        display: block;
+      }
+    }
+  }
+}
