@@ -19,11 +19,12 @@
     }
     img {
       width: 100%;
-      //height: auto;
+      height: 100%;
       object-fit: cover;
     }
   }
   &--banner-info {
+    height: 100%;
   }
   &--banner-info-content {
     @include position(absolute, auto, auto, 6rem, auto, 10);
