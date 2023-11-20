@@ -52,10 +52,10 @@ const ManinBanner = () => {
         className="travel-banner--mySwiper"
       >
         {bannerImage.map((data) => (
-          <SwiperSlide>
+          <SwiperSlide key={data.id}>
             <div className="travel-banner--banner-img">
               <MainBannerContent
-                id={data.id}
+                key={data.id}
                 image={data.image}
                 title={data.title}
                 paragraph={data.paragraph}
