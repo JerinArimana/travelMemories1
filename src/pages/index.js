@@ -7,6 +7,9 @@ import ManinBanner from "@/routes/landing-page/mainBanner";
 import TripPlanSearch from "@/routes/landing-page/tripPlanSearch";
 import TravelService from "@/routes/landing-page/travelService";
 import OurStory from "@/routes/landing-page/ourStory";
+import HolidayPackage from "@/routes/landing-page/holidayPackage";
+import TravelTipBanner from "@/routes/landing-page/travelTipBanner";
+import GroupTous from "@/routes/landing-page/groupTours";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +31,9 @@ export default function Home() {
         <TripPlanSearch />
         <TravelService />
         <OurStory />
+        <HolidayPackage />
+        <TravelTipBanner />
+        <GroupTous />
       </main>
     </>
   );

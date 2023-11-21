@@ -1,0 +1,83 @@
+.holiday-package {
+  margin-top: 140px;
+  &--package-header {
+    text-align: center;
+    margin-bottom: 3.25rem;
+    h1 {
+      margin-bottom: 7px;
+      @include fontSpecs(2.5rem, 600, $quaternary-color, normal, initial);
+    }
+    p {
+      @include fontSpecs(1.375rem, 300, $tertiary-lad-bg, normal, initial);
+      margin: 0rem;
+      padding: 0rem;
+    }
+  }
+  &--item-image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &--item-content {
+    color: $white;
+    padding: 1.875rem;
+    label {
+      background-color: $quaternary-color;
+      padding: 0.25rem 0.563rem;
+      border-radius: 3px;
+      margin-bottom: 0.75rem;
+    }
+    h5 {
+      @include fontSpecs(1.375rem, 600, $white, 1.75rem, initial);
+      margin-bottom: 0.438rem;
+    }
+  }
+  &--package-rating {
+    p {
+      @include fontSpecs(0.75rem, normal, $nonary-color, normal, initial);
+      margin-bottom: 0.75rem;
+      padding: 0rem;
+    }
+  }
+  &--item-content,
+  &--ovelay-pakage {
+    @include position(absolute, auto, auto, 0rem, auto, 5);
+  }
+  &--ovelay-pakage {
+    //@include position(absolute, auto, auto, 0rem, auto, 5);
+    width: 100%;
+    background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%)
+      0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.8;
+    z-index: 2;
+    height: 100%;
+  }
+  &--rating-image {
+    @include dflex(flex, center, flex-start);
+    gap: 0.188rem;
+  }
+  &--package-data {
+    @include dflex(flex, center, space-between);
+  }
+  &--price-data {
+    line-height: normal;
+    p {
+      @include fontSpecs(1.5rem, 600, $white, normal, initial);
+      margin: 0rem;
+      padding: 0rem;
+    }
+  }
+  &--save-price {
+    @include fontSpecs(0.75rem, 600, $nonary-color, normal, initial);
+  }
+  &--list {
+    .holiday-packageSwiper {
+      .swiper-wrapper {
+        padding-left: 1.875rem;
+      }
+    }
+  }
+}

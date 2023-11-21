@@ -1,36 +1,70 @@
 .travel-ourStory {
+  margin-top: 115px;
+  margin-bottom: 40px;
+  position: relative;
+  padding-top: 90px;
+  .right-Balloon {
+    @include position(absolute, 0rem, 0rem, auto, auto, 1);
+  }
+  .left-Balloon {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    @include position(absolute, 0rem, auto, 0rem, 0rem, 1);
+  }
   &--story-wrapper {
     @include dflex(flex, flex-start, space-between);
     gap: 85px;
+    &.--custom-container {
+      max-width: 1200px;
+    }
   }
   &--story-content {
-    // width: 612px;
-    width: calc(100% - 623px - 85px);
+    width: calc(100% - 585px - 85px);
+    span {
+      @include fontSpecs(1.25rem, 600, $septenary-color, normal, initial);
+    }
+    h1 {
+      @include fontSpecs(2rem, 600, $quaternary-color, normal, initial);
+      font-family: $secondary-font;
+      margin-bottom: 1.563rem;
+    }
+    p {
+      margin-bottom: 3.125rem;
+      @include fontSpecs(1.125rem, normal, $octonary-color, 2.25rem, initial);
+    }
   }
   &--story-image {
     position: relative;
-
-    width: 623px;
+    width: 457px;
+    height: 625px;
     @include dflex(flex, center, center);
     .top-image {
       position: absolute;
-      top: 0;
+      top: 16px;
+      width: 100%;
+      height: 100%;
     }
   }
   &--story-image-transparent {
     position: relative;
     z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &--status {
     @include dflex(flex, center, flex-start);
-    @include position(absolute, auto, -5rem, 5rem, auto, 5);
+    @include position(absolute, auto, -3rem, 7rem, auto, 5);
     background-color: $quinary-color;
     gap: 14px;
     box-shadow: 0px 20px 50px #01305433;
     border-radius: 0.5rem;
     padding: 24px 18px 24px 29px;
     &.--experiance {
-      @include position(absolute, 2rem, auto, auto, -7rem, 5);
+      @include position(absolute, 6rem, auto, auto, -5rem, 5);
       background-color: $white;
       h4 {
         color: $quinary-color;
@@ -50,16 +84,5 @@
       max-width: 102px;
       @include fontSpecs(1.188rem, normal, $white, 1.375rem, initial);
     }
-  }
-  &--story-content {
-    span {
-      @include fontSpecs(1.25rem, 600, $septenary-color, 3.438rem, initial);
-    }
-    h1 {
-      @include fontSpecs(2.613rem, 600, $quaternary-color, 3.438rem, initial);
-      font-family: $secondary-font;
-    }
-  }
-  &--status {
   }
 }

@@ -1,0 +1,53 @@
+.travel-tip {
+  margin-top: 108px;
+  background-image: url("/images/home/travelTip-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 512px;
+  position: relative;
+  color: $white;
+  &::after {
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 0.4;
+  }
+  &--wrapper {
+    height: 512px;
+    &.--custom-container {
+      max-width: 1200px;
+    }
+  }
+  &--content {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    @include dflex(flex, flex-start, center);
+    height: 512px;
+    flex-direction: column;
+
+    label {
+      background-color: $quinary-color;
+      padding: 5px 18px;
+      border-radius: 3px;
+      margin-bottom: 29px;
+      @include fontSpecs(0.75rem, normal, $white, normal, initial);
+    }
+    h1 {
+      @include fontSpecs(2.513rem, normal, $white, normal, initial);
+      font-family: $secondary-font;
+    }
+    p {
+      @include fontSpecs(1.125rem, normal, $white, 1.875rem, initial);
+    }
+  }
+  &--content-wrapper {
+    @include dflex(flex, center, center);
+    gap: 145px;
+    h1 {
+      width: 488px;
+    }
+    p {
+      width: calc(100% - 488px - 145px);
+    }
+  }
+}

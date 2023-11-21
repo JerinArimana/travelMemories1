@@ -4,6 +4,22 @@ import Image from "next/image";
 const OurStory = () => {
   return (
     <section className="travel-ourStory">
+      <div className="right-Balloon">
+        <Image
+          src="/images/home/story-right-Balloon.png"
+          width={72}
+          height={98}
+          alt=""
+        />
+      </div>
+      <div className="left-Balloon">
+        <Image
+          src="/images/home/story-left-Balloon.png"
+          width={108}
+          height={174}
+          alt=""
+        />
+      </div>
       <Container>
         <div className="travel-ourStory--story-wrapper --custom-container">
           <div className="travel-ourStory--story-content">

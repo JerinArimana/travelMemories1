@@ -133,7 +133,7 @@ const TripPlanSearch = () => {
             </div>
           </div>
           <div className="travel-search--search-btn">
-            <button>{`LET'S GO`}</button>
+            <button className="travel--btn travel--btn--blue">{`LET'S GO`}</button>
           </div>
         </div>
       </div>

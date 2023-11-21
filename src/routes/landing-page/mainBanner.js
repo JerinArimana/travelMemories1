@@ -53,7 +53,7 @@ const ManinBanner = () => {
       >
         {bannerImage.map((data) => (
           <SwiperSlide key={data.id}>
-            <div className="travel-banner--banner-img">
+            <div className="travel-banner--banner-img --hoverlay">
               <MainBannerContent
                 key={data.id}
                 image={data.image}
