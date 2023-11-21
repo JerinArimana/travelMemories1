@@ -6,6 +6,7 @@ import Header from "../../components/header";
 import ManinBanner from "@/routes/landing-page/mainBanner";
 import TripPlanSearch from "@/routes/landing-page/tripPlanSearch";
 import TravelService from "@/routes/landing-page/travelService";
+import OurStory from "@/routes/landing-page/ourStory";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function Home() {
         <ManinBanner />
         <TripPlanSearch />
         <TravelService />
-        <section>asdkjf</section>
+        <OurStory />
       </main>
     </>
   );

@@ -7,7 +7,7 @@ import { Select } from "antd";
 const TripPlanSearch = () => {
   return (
     <section className="travel-search">
-      <div className="travel-search--search-wrapper">
+      <div className="travel-search--search-wrapper --custom-container">
         <div className="travel-search--search-head">
           <h3>
             <span>Plan Your</span> Own Trips

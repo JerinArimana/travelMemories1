@@ -1,0 +1,15 @@
+.travel-ourStory {
+  &--story-wrapper {
+    @include dflex(flex, center, space-between);
+  }
+  &--story-content {
+    width: 612px;
+  }
+  &--story-image {
+    position: relative;
+  }
+  &--story-image-transparent {
+    position: absolute;
+    z-index: -1;
+  }
+}

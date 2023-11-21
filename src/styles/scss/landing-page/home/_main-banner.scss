@@ -1,6 +1,6 @@
 .travel-banner {
   &--banner-img {
-    height: 577px;
+    height: 737px;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -27,7 +27,7 @@
     height: 100%;
   }
   &--banner-info-content {
-    @include position(absolute, auto, auto, 6rem, auto, 10);
+    @include position(absolute, auto, auto, 11rem, auto, 10);
     width: 100%;
     text-align: center;
     color: $white;

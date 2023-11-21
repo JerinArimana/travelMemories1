@@ -3,8 +3,6 @@
   z-index: 10;
   position: relative;
   &--search-wrapper {
-    max-width: 1300px;
-    margin: 0 auto;
     @include dflex(flex, center, space-between);
     box-shadow: 0px 50px 50px #01305414;
     background-color: $white;

@@ -1,10 +1,48 @@
 import React from "react";
-
+import { Container } from "react-bootstrap";
+import Image from "next/image";
 const OurStory = () => {
   return (
-    <>
-      <p>story</p>
-    </>
+    <section className="travel-ourStory">
+      <Container>
+        <div className="travel-ourStory--story-wrapper --custom-container">
+          <div className="travel-ourStory--story-content">
+            <span>OUR STORY</span>
+            <h1>Luxury Tours and Tailor-Made Holidays by Travel Memories</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable. If you are going to use a passage of Lorem
+              Ipsum, you need to be sure there isn't anything embarrassing
+              hidden in the middle of text. All the Lorem Ipsum generators on
+              the Internet tend to repeat predefined chunks as necessary, making
+              this the first true generator on the Internet. It uses a
+              dictionary of over 200 Latin words, combined with a handful of
+              model sentence structures, to generate Lorem Ipsum which looks
+              reasonable.
+            </p>
+            <button>Read More Stroy</button>
+          </div>
+          <div className="travel-ourStory--story-image">
+            <div className="travel-ourStory--story-image-transparent">
+              <Image
+                src="/images/home/ourStory-Union.svg"
+                width={362}
+                height={495}
+                alt=""
+              />
+            </div>
+            <Image
+              src="/images/home/OUR-STORY.png"
+              width={362}
+              height={495}
+              alt=""
+            />
+          </div>
+        </div>
+      </Container>
+    </section>
   );
 };
 
