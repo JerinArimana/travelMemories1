@@ -10,7 +10,7 @@ const OurStory = () => {
             <span>OUR STORY</span>
             <h1>Luxury Tours and Tailor-Made Holidays by Travel Memories</h1>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
+              {`There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
               injected humour, or randomised words which don't look even
               slightly believable. If you are going to use a passage of Lorem
@@ -20,10 +20,10 @@ const OurStory = () => {
               this the first true generator on the Internet. It uses a
               dictionary of over 200 Latin words, combined with a handful of
               model sentence structures, to generate Lorem Ipsum which looks
-              reasonable.
+              reasonable.`}
             </p>
             <button className="travel--btn travel--btn--blue">
-              Read More Stroy
+              {`Read More Stroy`}
             </button>
           </div>
           <div className="travel-ourStory--story-image">
