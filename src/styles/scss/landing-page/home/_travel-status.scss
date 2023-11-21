@@ -1,0 +1,31 @@
+.travel-status {
+  background: $primary;
+  padding: 93px 0px;
+  margin-top: 88px;
+  &--status-lists {
+    ul {
+      margin: 0rem;
+      padding: 0rem;
+      list-style: none;
+      @include dflex(flex, center, center);
+      gap: 140px;
+      li {
+        display: flex;
+        gap: 28px;
+        color: white;
+        @include dflex(flex, center, flex-start);
+      }
+    }
+  }
+  &--content {
+    h6 {
+      @include fontSpecs(1.875rem, 600, $white, normal, initial);
+      margin: 0rem;
+    }
+    p {
+      @include fontSpecs(1.25rem, 300, $white, normal, initial);
+      margin: 0rem;
+      padding: 0rem;
+    }
+  }
+}
