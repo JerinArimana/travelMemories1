@@ -1,15 +1,65 @@
 .travel-ourStory {
   &--story-wrapper {
-    @include dflex(flex, center, space-between);
+    @include dflex(flex, flex-start, space-between);
+    gap: 85px;
   }
   &--story-content {
-    width: 612px;
+    // width: 612px;
+    width: calc(100% - 623px - 85px);
   }
   &--story-image {
     position: relative;
+
+    width: 623px;
+    @include dflex(flex, center, center);
+    .top-image {
+      position: absolute;
+      top: 0;
+    }
   }
   &--story-image-transparent {
-    position: absolute;
+    position: relative;
     z-index: -1;
+  }
+  &--status {
+    @include dflex(flex, center, flex-start);
+    @include position(absolute, auto, -5rem, 5rem, auto, 5);
+    background-color: $quinary-color;
+    gap: 14px;
+    box-shadow: 0px 20px 50px #01305433;
+    border-radius: 0.5rem;
+    padding: 24px 18px 24px 29px;
+    &.--experiance {
+      @include position(absolute, 2rem, auto, auto, -7rem, 5);
+      background-color: $white;
+      h4 {
+        color: $quinary-color;
+      }
+      p {
+        color: $secondary-lad-bg;
+      }
+    }
+    h4 {
+      @include fontSpecs(2.438rem, bold, $white, 3.313rem, initial);
+      margin: 0rem;
+      padding: 0rem;
+    }
+    p {
+      margin: 0rem;
+      padding: 0rem;
+      max-width: 102px;
+      @include fontSpecs(1.188rem, normal, $white, 1.375rem, initial);
+    }
+  }
+  &--story-content {
+    span {
+      @include fontSpecs(1.25rem, 600, $septenary-color, 3.438rem, initial);
+    }
+    h1 {
+      @include fontSpecs(2.613rem, 600, $quaternary-color, 3.438rem, initial);
+      font-family: $secondary-font;
+    }
+  }
+  &--status {
   }
 }

@@ -22,7 +22,9 @@ const OurStory = () => {
               model sentence structures, to generate Lorem Ipsum which looks
               reasonable.
             </p>
-            <button>Read More Stroy</button>
+            <button className="travel--btn travel--btn--blue">
+              Read More Stroy
+            </button>
           </div>
           <div className="travel-ourStory--story-image">
             <div className="travel-ourStory--story-image-transparent">
@@ -32,13 +34,23 @@ const OurStory = () => {
                 height={495}
                 alt=""
               />
+              <div className="travel-ourStory--status">
+                <h4>30k</h4>
+                <p>Our Happy Clients</p>
+              </div>
+              <div className="travel-ourStory--status --experiance">
+                <h4>12+</h4>
+                <p>Years of Experiences</p>
+              </div>
+              <div className="top-image">
+                <Image
+                  src="/images/home/OUR-STORY.png"
+                  width={362}
+                  height={495}
+                  alt=""
+                />
+              </div>
             </div>
-            <Image
-              src="/images/home/OUR-STORY.png"
-              width={362}
-              height={495}
-              alt=""
-            />
           </div>
         </div>
       </Container>
