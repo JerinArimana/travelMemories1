@@ -1,0 +1,56 @@
+.travel-our-cruises {
+  background-image: url("/images/home/our-cruises.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 710px;
+  position: relative;
+  color: #fff;
+  margin-top: 111px;
+  @include dflex(flex, center, center);
+  &--wrapper {
+    &::after {
+      content: "";
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $primary;
+    }
+  }
+  &--content {
+    z-index: 2;
+    position: relative;
+    max-width: 578px;
+    h1 {
+      @include fontSpecs(2.813rem, normal, $white, normal, initial);
+      font-family: $secondary-font;
+      margin-bottom: 1.563rem;
+    }
+    p {
+      @include fontSpecs(1.125rem, normal, $white, 1.875rem, initial);
+      margin-bottom: 44px;
+    }
+  }
+  &--International-cruises {
+    ul {
+      margin: 0rem;
+      padding: 0rem;
+      list-style: none;
+      @include dflex(flex, center, flex-start);
+      gap: 4rem;
+      margin-bottom: 3.75rem;
+      li {
+        @include dflex(flex, flex-start, flex-start);
+        gap: 0.78rem;
+        p {
+          margin: 0rem;
+          padding: 0rem;
+          line-height: normal;
+          @include fontSpecs(1.375rem, normal, $white, normal, initial);
+        }
+      }
+    }
+  }
+}
