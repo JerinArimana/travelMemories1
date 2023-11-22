@@ -1,0 +1,67 @@
+.travel-holiday {
+  background-image: url("/images/home/landscape-morning.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 40px right 0px;
+  min-height: 710px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--wrapper {
+    margin-right: 3.438rem;
+  }
+  &--content-item {
+    max-width: 500px;
+    margin-left: auto;
+    background-color: $white;
+    padding: 2.5rem;
+    padding-top: 3.125rem;
+    padding-bottom: 4.375rem;
+    border-radius: 0.313rem;
+    h1 {
+      margin-bottom: 1.438rem;
+      @include fontSpecs(2.25rem, 600, $quaternary-lad-bg, normal, initial);
+    }
+    p {
+      margin-bottom: 2.688rem;
+      @include fontSpecs(1rem, normal, $quaternary-lad-bg, 1.875rem, initial);
+    }
+  }
+  &--contact-number {
+    position: relative;
+
+    @include dflex(flex, center, space-between);
+    .form-control {
+      @include position(absolute, auto, auto, auto, 0rem, 1);
+      padding: 15px 55px;
+      padding-right: 118px !important;
+    }
+    img {
+      margin-left: 20px;
+    }
+    img,
+    button {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &--destinations {
+    margin-top: 36px;
+    h6 {
+      margin-bottom: 20px;
+      @include fontSpecs(1.25, 600, $quaternary-lad-bg, normal, initial);
+    }
+  }
+  &--destinations-item {
+    @include dflex(flex, center, flex-start);
+    gap: 10px;
+    button {
+      padding: 9px 30px;
+      background-color: $white;
+      border: 1px solid $quinary-lad-bg;
+      border-radius: 3px;
+      @include fontSpecs(1rem, normal, $quaternary-lad-bg, normal, initial);
+    }
+  }
+}

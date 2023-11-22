@@ -1,0 +1,36 @@
+.travel-hot-deals {
+  margin-top: 82px;
+  &--image {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      background: transparent
+        linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat
+        padding-box;
+    }
+  }
+  &--content {
+    @include position(absolute, auto, auto, 0rem, 0rem, 5);
+    width: 100%;
+    color: $white;
+    padding: 1.625rem 2.5rem;
+    span {
+      background-color: $quinary-color;
+      @include fontSpecs(0.75rem, normal, $white, normal, initial);
+      border-radius: 3px;
+      padding: 0.25rem 0.625rem;
+      margin-bottom: 0.25rem;
+    }
+    h5 {
+      @include fontSpecs(1.375rem, 600, $white, normal, initial);
+    }
+  }
+  &--item {
+    position: relative;
+    margin-bottom: 1.25rem;
+  }
+}
