@@ -14,6 +14,7 @@ import StatusBanner from "@/routes/landing-page/statusBanner";
 import OurCruises from "@/routes/landing-page/ourCruises";
 import HotDeals from "@/routes/landing-page/hotDeals";
 import CustomizedHolidays from "@/routes/landing-page/customizedHolidays";
+import PopularDestinations from "@/routes/landing-page/popularDestinations";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,7 @@ export default function Home() {
         <OurCruises />
         <HotDeals />
         <CustomizedHolidays />
+        <PopularDestinations />
       </main>
     </>
   );

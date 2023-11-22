@@ -1,0 +1,35 @@
+.travel-popularDestinations {
+  margin-top: 108px;
+  &--item-image {
+    position: relative;
+    &::after {
+      background: transparent
+        linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat
+        padding-box;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &--item {
+    position: relative;
+    margin-bottom: 1.875rem;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  &--item-content {
+    width: 100%;
+    text-align: center;
+    @include position(absolute, auto, auto, 2rem, 0rem, 4);
+    h5 {
+      @include fontSpecs(1.25rem, 600, $white, normal, initial);
+      margin-bottom: 3px;
+    }
+    p {
+      @include fontSpecs(1rem, 600, $quinary-color, normal, initial);
+      margin-bottom: 0rem;
+    }
+  }
+}
